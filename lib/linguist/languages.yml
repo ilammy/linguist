@@ -4338,6 +4338,15 @@ PogoScript:
   tm_scope: source.pogoscript
   ace_mode: text
   language_id: 289
+Pollen:
+  type: programming
+  ace_mode: text
+  wrap: true        # TODO: Is this common? I.e., for anyone other that Matthew?
+  extensions:       # TODO: Others? .ptree? .p? .index? Maybe in "filenames"?
+  - ".pm"
+  color: "#ff0000"  # TODO: Consensus on the color. I don't know any specific.
+# language_id:      # TODO: Assign a language ID.
+  tm_scope: source.pollen
 Pony:
   type: programming
   extensions:
