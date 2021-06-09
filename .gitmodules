@@ -854,6 +854,9 @@
 [submodule "vendor/grammars/pike-textmate"]
 	path = vendor/grammars/pike-textmate
 	url = https://github.com/hww3/pike-textmate
+[submodule "vendor/grammars/pollen-grammar"]
+	path = vendor/grammars/pollen-grammar
+	url = https://github.com/ilammy/pollen-grammar
 [submodule "vendor/grammars/powershell"]
 	path = vendor/grammars/powershell
 	url = https://github.com/PowerShell/EditorSyntax

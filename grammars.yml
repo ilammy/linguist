@@ -763,6 +763,8 @@ vendor/grammars/pig-latin:
 - source.pig_latin
 vendor/grammars/pike-textmate:
 - source.pike
+vendor/grammars/pollen-grammar:
+- text.pollen
 vendor/grammars/powershell:
 - source.powershell
 vendor/grammars/processing.tmbundle:
