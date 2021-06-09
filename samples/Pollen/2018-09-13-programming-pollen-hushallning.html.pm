@@ -1,80 +1,36 @@
 #lang pollen
 ◊(define-meta template "template-post.html")
-◊(define-meta title "Programming Pollen")
+◊(define-meta title "programmable programming languages")
 ◊(define-meta author "Hugo Bernstein")
 ◊(define-meta action "")
-◊(define-meta desc "設定Pollen/ 對Pollen進行編程")
-
-◊(define tag-ett "a tag holding a value")
-◊(define (get-tag-ett) "a tag function returning a value")
+◊(define-meta desc "")
 
 ◊section{
-  ◊h1{Programming pollen}
   ◊article{
-    ◊h2{intro}
-    ◊p{
-      Experienced programmers, you will find this an easy read.
-
-      Inexperienced programmers, you might find some parts a
-
-      trudge, but keep going. Learning the material on this page will pay hefty dividends for as long as you use Pollen.
-    }
-
-    ◊h3{Tag functions}
-    Three golden rules of tag functions:
-    ◊ol[#:class "greek"]{
-      ◊item{Every Pollen tag calls a function with the same name.}
-      ◊item{The input values for that function are the attributes and elements of the tag.}
-      ◊item{The whole tag — tag name, attributes, and elements — is replaced with the return value of the called function.}
-    }
-    ◊h4{Tag-function syntax}
-    ◊p{
-      Det finns tre typer av Tag-function:
-    ◊strong{tag alone}, ◊strong{tag med elements} samt ◊strong{tag med attributes och elements}.
-    }
-    ◊p{Commands can be written in ◊strong{pollen mode} or ◊strong{Racket mode}}
-    ◊p{A tag without attributes or elements is interpreted as a value.}
-    ◊p{To define a tag as a function, square brackets is needed to signal that you want to evaluate the function.}
-
-    ◊p{
-      to refer to the value held by a tag name:
-      ◊tag-ett or ◊|tag-ett|
-
-      to invoke the  function: ◊get-tag-ett[]
-    }
-
-    ◊h4{Parsing attributes}
-    ◊p{
-      detecting attributes in an argument list can be tricky, because:
-      ◊ol[#:class "greek"]{
-        ◊item{the tag may or may not have attributes;}
-        ◊item{those attributes may be in standard or abbreviated syntax.}
-      }
-
-}
+  ◊hr[#:class "spektrum"]
+  ◊h2{可編程的編程語言}
+  ◊p{
+    lisp可以在編譯過程中進行編程。
+    racket是一種可編程的編程語言。
+    目前我還不能理解這些有什麼內涵。
   }
 
+  ◊h2{意義何在}
+  ◊p{
+    眼下我還處於茫然的情況。
+    只是覺得這個概念有意思，並且希望能了解更多。
+    直覺上認為，可編程的編程語言會有利於機器的自我教育，從而推動算法的進化。
+
+}
+}
   ◊aside{
-    ◊h2{Abstract}
     ◊(hash-ref metas 'desc)
-  }
-
-  ◊article{
-    ◊hr[#:class "spektrum1"]
-    ◊h2{mindmaps}
-}
-
-  ◊aside{
-
-    ◊h2{◊ref}
-    ◊ol[#:class "hebrew"]{
-      ◊item{◊link["https://docs.racket-lang.org/pollen/programming-pollen.html?q=xexpr"]{officiell handboken --- Programming pollen}}
-      ◊item{◊link["https://cacm.acm.org/magazines/2018/3/225475-a-programmable-programming-language/fulltext"]{Matthias Felleisen. A Programmable Programming Language. Communications of the ACM, March 2018, Vol. 61 No. 3, Pages 62-71}}
+    ◊div[#:class "omslag"]{
+      ◊h3{log}
+      ◊ol[#:class "greek"]{
+        ◊item{raco, incremental render, how to: 修改文檔後，raco潤色編譯至少需要6-17s，單獨編譯最新的修改也要4s左右，我希望能縮短這個時間。增量潤色可能是比較好的方法。}
+        ◊item{運行◊em{raco pollen setup DIR} 之後，潤色編譯時間大概為4-5s。 運行◊em{raco pollen reset DIR}以刪除cache路徑。}
     }
   }
 }
-
-
-◊section{
-
 }
