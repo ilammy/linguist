@@ -4348,7 +4348,7 @@ Pollen:
   - ".pp"
   - ".ptree"
   color: "#ff0000"
-  tm_scope: source.pollen
+  tm_scope: text.pollen
   language_id: 444169086
 Pony:
   type: programming
