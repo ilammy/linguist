@@ -4341,12 +4341,12 @@ PogoScript:
 Pollen:
   type: programming
   ace_mode: text
-  wrap: true        # TODO: Is this common? I.e., for anyone other that Matthew?
-  extensions:       # TODO: Others? .ptree? .p? .index? Maybe in "filenames"?
+  wrap: true
+  extensions:
   - ".pm"
-  color: "#ff0000"  # TODO: Consensus on the color. I don't know any specific.
-# language_id:      # TODO: Assign a language ID.
+  color: "#ff0000"
   tm_scope: source.pollen
+  language_id: 444169086
 Pony:
   type: programming
   extensions:
