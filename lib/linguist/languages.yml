@@ -4344,6 +4344,9 @@ Pollen:
   wrap: true
   extensions:
   - ".pm"
+  - ".p"
+  - ".pp"
+  - ".ptree"
   color: "#ff0000"
   tm_scope: source.pollen
   language_id: 444169086
